@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+	
+    
+    <RelativeLayout
+        android:id="@+id/rlmy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/tvmytab"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/btnlogin"
+            android:text="我的书屋"
+            android:gravity="center_vertical"
+            android:textSize="40px" />
+		
+        <Button
+            android:id="@+id/btnmy"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/userphoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/tvmyinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnmy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="我最近在学习android..." />
+        
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/tvmyinfo"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginBottom="60dp"
+		    android:orientation="vertical" >
+
+			<Button
+			    android:id="@+id/btnmybooks"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:drawableLeft="@drawable/floor"
+			    android:background="#FFFFFF"
+			    android:gravity="center_vertical"
+			    android:text="   我的书架"
+			    android:textSize="30px" />
+
+			<Button
+			    android:id="@+id/btnmyfriends"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:layout_gravity="center_vertical"
+			    android:drawableLeft="@drawable/friend"
+			    android:background="#FFFFFF"
+			    android:gravity="center_vertical"
+			    android:text="   我的好友"
+			    android:textSize="30px" />
+
+			<Button
+			    android:id="@+id/btnmylikes"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:drawableLeft="@drawable/shoucang"
+			    android:background="#FFFFFF"
+			    android:gravity="center_vertical"
+			    android:text="   已收藏"
+			    android:textSize="30px" />
+			
+			<Button
+			    android:id="@+id/btnmysetting"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:drawableLeft="@drawable/setting"
+			    android:background="#FFFFFF"
+			    android:gravity="center_vertical"
+			    android:text="   设置"
+			    android:textSize="30px" />
+
+    	</LinearLayout>
+
+		<Button
+		    android:id="@+id/btnlogin"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:background="@drawable/login" />
+
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

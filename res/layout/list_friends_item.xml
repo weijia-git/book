@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btnfriend"
+        android:background="@drawable/userphoto"
+        android:layout_width="70dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/tvfriendinfo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/btnfriend"
+        android:layout_alignLeft="@+id/tvfriendname"
+        android:gravity="center_vertical"
+        android:text="我最近在学习spring" />
+
+    <TextView
+        android:id="@+id/tvfriendname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/btnfriend"
+        android:drawableRight="@drawable/lookfriendbooks"
+        android:gravity="center_vertical"
+        android:text="我心飞翔" />
+   
+</RelativeLayout>

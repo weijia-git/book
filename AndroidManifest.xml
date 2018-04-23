@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.book"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.activity.BaseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.StoreActivity" 
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.activity.RankActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.ChangeRankActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.KoubeiRankActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.AnliRankActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.FriendActivity" >
+         </activity>
+        <activity
+            android:name="com.example.activity.BookActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.MyselfActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.BookViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.BookCommentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.MyinfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.activity.SettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
