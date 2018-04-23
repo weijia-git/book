@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+	
+    
+   <fragment
+        android:id="@+id/fmy"
+        android:name="com.example.fragment.MyselfFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="0dp" />
+	<RelativeLayout
+        android:id="@+id/rlmy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/tvmytab"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+			android:drawableLeft="@drawable/setting"
+			android:drawableRight="@drawable/login"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/qcbmy"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/userphoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/tvmyinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qcbmy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="我最近在学习android..." />
+        
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/tvmyinfo"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginBottom="40dp"
+		    android:orientation="vertical" >
+
+			<Button
+			    android:id="@+id/tvmybooks"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:drawableLeft="@drawable/floor"
+			    android:gravity="center_vertical"
+			    android:text="   我的书架"
+			    android:textSize="30px" />
+
+			<Button
+			    android:id="@+id/tvmyfriends"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:layout_gravity="center_vertical"
+			    android:drawableLeft="@drawable/friend"
+			    android:gravity="center_vertical"
+			    android:text="   我的好友"
+			    android:textSize="30px" />
+
+			<Button
+			    android:id="@+id/tvmylike"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:drawableLeft="@drawable/shoucang"
+			    android:gravity="center_vertical"
+			    android:text="   已收藏"
+			    android:textSize="30px" />
+			
+			<Button
+			    android:id="@+id/tv"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:drawableLeft="@drawable/setting"
+			    android:gravity="center_vertical"
+			    android:text="   设置"
+			    android:textSize="30px" />
+
+    	</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

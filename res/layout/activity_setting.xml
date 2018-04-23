@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvmyinfotab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+		android:text="用户设置"
+        android:textSize="40px" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvmyinfotab" >
+        
+
+   		<TextView
+   		    android:id="@+id/tvspicture"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_alignTop="@+id/tvlabhead"
+   		    android:gravity="center_vertical"
+   		    android:text="  自动加载图片 "
+   		    android:textSize="30px" />
+
+   		<TextView
+   		    android:id="@+id/tvsnotice"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_below="@+id/tvspicture"
+   		    android:gravity="center_vertical"
+   		    android:textSize="30px"
+   		    android:text="  接收新消息通知" />
+
+   		<TextView
+   		    android:id="@+id/tvssound"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_alignRight="@+id/tvsnotice"
+   		    android:layout_below="@+id/tvsnotice"
+   		    android:gravity="center_vertical"
+   		    android:text="  声音"
+   		    android:textSize="30px" />
+
+   		<TextView
+   		    android:id="@+id/tvsshake"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_alignRight="@+id/tvssound"
+   		    android:layout_below="@+id/tvssound"
+   		    android:gravity="center_vertical"
+   		    android:text="  振动"
+   		    android:textSize="30px" />
+
+   		<Switch
+   		    android:id="@+id/switch1"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignBaseline="@+id/tvspicture"
+   		    android:layout_alignBottom="@+id/tvspicture"
+   		    android:layout_alignParentRight="true"/>
+
+   		<Switch
+   		    android:id="@+id/Switch2"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignBaseline="@+id/tvsnotice"
+   		    android:layout_alignBottom="@+id/tvsnotice"
+   		    android:layout_alignParentRight="true" />
+
+   		<Switch
+   		    android:id="@+id/Switch2"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignBaseline="@+id/tvssound"
+   		    android:layout_alignBottom="@+id/tvssound"
+   		    android:layout_alignParentRight="true" />
+
+   		<Button
+   		    android:id="@+id/btnexit"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_below="@+id/tvsshake"
+   		    android:background="#FFFFFF"
+   		    android:text="退出" />
+
+   		<Switch
+   		    android:id="@+id/Switch01"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_alignBaseline="@+id/tvsshake"
+   		    android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

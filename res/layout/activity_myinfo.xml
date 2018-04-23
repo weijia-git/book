@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvmyinfotab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+		android:text="我的信息"  />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvmyinfotab" >
+        
+        <TextView
+            android:id="@+id/tvlabhead"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/qcbmyinfohead"
+            android:gravity="center_vertical"
+            android:text="  我的头像：" />
+
+   		<ImageView
+   		    android:id="@+id/ivmyinfohead"
+   		    android:layout_width="55dp"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_alignTop="@+id/tvlabhead"
+   		    android:src="@drawable/userphoto"
+   		    android:layout_marginRight="75dp" />
+
+   		<TextView
+   		    android:id="@+id/tvmyinfoname"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_below="@+id/ivmyinfohead"
+   		    android:gravity="center_vertical"
+   		    android:text="  我的昵称：" />
+
+   		<EditText
+   		    android:id="@+id/etmyinfoname"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignBaseline="@+id/tvmyinfoname"
+   		    android:layout_alignBottom="@+id/tvmyinfoname"
+   		    android:layout_alignParentRight="true"
+   		    android:ems="10"
+   		    android:enabled="false"
+			android:gravity="center_horizontal"
+   		    android:text="方虚圣" >
+   		</EditText>
+
+   		<TextView
+   		    android:id="@+id/tvmyinfosex"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_below="@+id/tvmyinfoname"
+   		    android:gravity="center_vertical"
+   		    android:text="  我的性别：" />
+
+   		<EditText
+   		    android:id="@+id/etmysex"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignBaseline="@+id/tvmyinfosex"
+   		    android:layout_alignBottom="@+id/tvmyinfosex"
+   		    android:layout_alignParentRight="true"
+   		    android:ems="10"
+   		    android:enabled="false"
+			android:gravity="center_horizontal"
+   		    android:text="男" />
+
+   		<TextView
+   		    android:id="@+id/tvmyphone"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_below="@+id/tvmyinfosex"
+   		    android:gravity="center_vertical"
+   		    android:text="  绑定手机：" />
+
+   		<EditText
+   		    android:id="@+id/etmyphone"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignBaseline="@+id/tvmyphone"
+   		    android:layout_alignBottom="@+id/tvmyphone"
+   		    android:layout_alignParentRight="true"
+   		    android:ems="10"
+   		    android:enabled="false"
+   		    android:gravity="center_horizontal"
+   		    android:text="15238149892" />
+
+   		<TextView
+   		    android:id="@+id/tvmyemail"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="60dp"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_below="@+id/tvmyphone"
+   		    android:gravity="center_vertical"
+   		    android:text="  注册邮箱："  />
+
+   		<EditText
+   		    android:id="@+id/etmyemail"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignBaseline="@+id/tvmyemail"
+   		    android:layout_alignBottom="@+id/tvmyemail"
+   		    android:layout_alignParentRight="true"
+   		    android:ems="10"
+   		    android:enabled="false"
+   		    android:gravity="center_horizontal"
+   		    android:text="819442883@qq.com" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnmyinfosetting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:drawableTop="@drawable/setting"
+        android:background="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"  />
+
+</RelativeLayout>

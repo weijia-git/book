@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/llhome"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivhome"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ivhome1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llhome"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnhomebook3"
+            android:layout_width="70dp"
+            android:layout_height="125dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/book1"
+            android:text="java" />
+
+        <Button
+            android:id="@+id/btnhomebook6"
+            android:layout_width="70dp"
+            android:layout_height="125dp"
+            android:layout_alignBaseline="@+id/btnhomebook5"
+            android:layout_alignBottom="@+id/btnhomebook5"
+            android:layout_alignLeft="@+id/btnhomebook3"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/book2"
+            android:text="java" />
+
+        <Button
+            android:id="@+id/btnhomebook5"
+            android:layout_width="70dp"
+            android:layout_height="125dp"
+            android:layout_alignBaseline="@+id/btnhomebook4"
+            android:layout_alignBottom="@+id/btnhomebook4"
+            android:layout_alignLeft="@+id/btnhomebook2"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/book3"
+            android:text="java" />
+
+        <Button
+            android:id="@+id/btnhomebook4"
+            android:layout_width="70dp"
+            android:layout_height="125dp"
+            android:layout_alignLeft="@+id/btnhomebook1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22dp"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/book4"
+            android:text="java" />
+
+        <Button
+            android:id="@+id/btnhomebook2"
+            android:layout_width="70dp"
+            android:layout_height="125dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/book5"
+            android:text="java" />
+
+        <Button
+            android:id="@+id/btnhomebook1"
+            android:layout_width="70dp"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/book6"
+            android:text="java" />
+    </RelativeLayout>
+
+</RelativeLayout>

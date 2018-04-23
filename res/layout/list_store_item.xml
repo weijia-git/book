@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnstoreitem"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/store" />
+
+    <TextView
+        android:id="@+id/tvstorename"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:padding="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnstoreitem"
+        android:gravity="center_vertical"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvstoreaddr"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvstorename"
+        android:layout_toRightOf="@+id/btnstoreitem"
+        android:gravity="center_vertical"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvstorestar"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvstoreaddr"
+        android:layout_toRightOf="@+id/btnstoreitem"
+        android:gravity="center_vertical"
+        android:text="★★★★☆" />
+    
+</RelativeLayout>
